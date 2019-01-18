@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header><h1 id="title">Survey Form</h1></header>
+    <main>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <p id="description">
+        Please take this short survey to let us know how we can improve
+        freeCodeCamp
+      </p>
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+        <hr />
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <hr />
+        <label for="age" id="number-label">Age:</label>
+        <input
+          min="10"
+          max="99"
+          type="number"
+          id="number"
+          name="age"
+          placeholder="Enter your age"
+        />
+        <hr />
+        <label for="role">Which option best describes you?</label>
+        <select name="currentRole" id="dropdown" class="dropdown">
+          <option disabled value="">Select an option</option>
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>
+          <option value="preferNot">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        <hr />
+        <label for="radioBoxes">
+          Would you recommend freeCodeCamp to a friend?</label
+        >
+        <ul id="boxes">
+          <li><input type="radio" id="radioBoxes" value="radioBoxes" name="option"/>Hells Yes</li>
+          <li><input type="radio" id="radioBoxes" value="radioBoxes" name="option" />Possibily</li>
+          <li><input type="radio" id="radioBoxes" value="radioBoxes" name="option" />Nope</li>
+        </ul>
+        <hr />
+        <label for="improvements"
+          >Topics that could be improved (Check all that apply):</label
+        >
+        <ul id="boxes">
+          <li>
+            <input type="checkbox" id="improvements" value="improve" />Front-end
+            Projects
+          </li>
+          <li>
+            <input type="checkbox" id="improvements" value="improve" />Back-end
+            Projects
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="improvements"
+              value="improve"
+            />Animations Projects
+          </li>
+          <li>
+            <input type="checkbox" id="improvements" value="improve" />City
+            Meetups
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="improvements"
+              value="improve"
+            />Challenges
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="improvements"
+              value="improve"
+            />Pair-Programming
+          </li>
+        </ul></label>
+        <label for="comment">Additional Comments</label>
+        <textarea type="textarea" id="comment"></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

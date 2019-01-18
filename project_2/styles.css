@@ -1,0 +1,15 @@
+body {
+  background-color: #eee;
+}
+
+header {
+  border: groove 10px grey;
+}
+
+#boxes {
+  list-style-type: none;
+}
+#comment {
+  width: 200px;
+  height: 200px;
+}
